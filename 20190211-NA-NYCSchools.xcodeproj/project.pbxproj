@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A24402DF221E66AA00AF210A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24402DE221E66AA00AF210A /* AppDelegate.swift */; };
-		A24402E1221E66AA00AF210A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24402E0221E66AA00AF210A /* ViewController.swift */; };
-		A24402E4221E66AA00AF210A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24402E2221E66AA00AF210A /* Main.storyboard */; };
 		A24402E6221E66AC00AF210A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24402E5221E66AC00AF210A /* Assets.xcassets */; };
 		A24402E9221E66AC00AF210A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */; };
 		A24402F4221E66AD00AF210A /* _0190211_NA_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24402F3221E66AD00AF210A /* _0190211_NA_NYCSchoolsTests.swift */; };
 		A24402FF221E66AD00AF210A /* _0190211_NA_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24402FE221E66AD00AF210A /* _0190211_NA_NYCSchoolsUITests.swift */; };
+		A2440310221E670400AF210A /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A244030C221E670400AF210A /* ScoreViewController.swift */; };
+		A2440311221E670400AF210A /* SchoolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A244030D221E670400AF210A /* SchoolViewCell.swift */; };
+		A2440312221E670400AF210A /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A244030E221E670400AF210A /* SchoolViewController.swift */; };
+		A2440313221E670400AF210A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A244030F221E670400AF210A /* Main.storyboard */; };
+		A2440318221E77A400AF210A /* NetworkErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */; };
+		A2440319221E77A400AF210A /* NetworkErrorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +40,6 @@
 /* Begin PBXFileReference section */
 		A24402DB221E66AA00AF210A /* 20190211-NA-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20190211-NA-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24402DE221E66AA00AF210A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A24402E0221E66AA00AF210A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A24402E3221E66AA00AF210A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A24402E5221E66AC00AF210A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A24402E8221E66AC00AF210A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A24402EA221E66AC00AF210A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,12 @@
 		A24402FA221E66AD00AF210A /* 20190211-NA-NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20190211-NA-NYCSchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24402FE221E66AD00AF210A /* _0190211_NA_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190211_NA_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		A2440300221E66AD00AF210A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A244030C221E670400AF210A /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		A244030D221E670400AF210A /* SchoolViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewCell.swift; sourceTree = "<group>"; };
+		A244030E221E670400AF210A /* SchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
+		A244030F221E670400AF210A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewCell.swift; sourceTree = "<group>"; };
+		A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkErrorViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2436394221E7D3C0061792F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */,
+				A244030D221E670400AF210A /* SchoolViewCell.swift */,
+				A244030F221E670400AF210A /* Main.storyboard */,
+				A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */,
+				A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2436395221E7D630061792F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A244030E221E670400AF210A /* SchoolViewController.swift */,
+				A244030C221E670400AF210A /* ScoreViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		A24402D2221E66AA00AF210A = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +126,10 @@
 		A24402DD221E66AA00AF210A /* 20190211-NA-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				A2436395221E7D630061792F /* ViewController */,
+				A2436394221E7D3C0061792F /* View */,
 				A24402DE221E66AA00AF210A /* AppDelegate.swift */,
-				A24402E0221E66AA00AF210A /* ViewController.swift */,
-				A24402E2221E66AA00AF210A /* Main.storyboard */,
 				A24402E5221E66AC00AF210A /* Assets.xcassets */,
-				A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */,
 				A24402EA221E66AC00AF210A /* Info.plist */,
 			);
 			path = "20190211-NA-NYCSchools";
@@ -229,9 +257,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2440319221E77A400AF210A /* NetworkErrorViewCell.xib in Resources */,
+				A2440313221E670400AF210A /* Main.storyboard in Resources */,
 				A24402E9221E66AC00AF210A /* LaunchScreen.storyboard in Resources */,
 				A24402E6221E66AC00AF210A /* Assets.xcassets in Resources */,
-				A24402E4221E66AA00AF210A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A24402E1221E66AA00AF210A /* ViewController.swift in Sources */,
+				A2440312221E670400AF210A /* SchoolViewController.swift in Sources */,
+				A2440318221E77A400AF210A /* NetworkErrorViewCell.swift in Sources */,
+				A2440311221E670400AF210A /* SchoolViewCell.swift in Sources */,
 				A24402DF221E66AA00AF210A /* AppDelegate.swift in Sources */,
+				A2440310221E670400AF210A /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A24402E2221E66AA00AF210A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A24402E3221E66AA00AF210A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E3Q9UZ7X2;
 				INFOPLIST_FILE = "20190211-NA-NYCSchools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E3Q9UZ7X2;
 				INFOPLIST_FILE = "20190211-NA-NYCSchools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
