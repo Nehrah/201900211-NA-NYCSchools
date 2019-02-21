@@ -252,7 +252,8 @@ extension SchoolViewController: UITableViewDataSource,UITableViewDelegate,UISear
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = nil
-        searchBar.showsCancelButton = false
+        searchBar.showsCancelButton = true
+        tableView.reloadData()
         searchBar.endEditing(true)
         searchActive = false;
         loadMoreItems()
