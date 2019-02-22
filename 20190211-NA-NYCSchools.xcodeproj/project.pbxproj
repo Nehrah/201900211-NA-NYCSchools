@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7DEE3599F40A9076116EFE /* Pods_20190211_NA_NYCSchoolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB041D4C30E0FBD64F99394 /* Pods_20190211_NA_NYCSchoolsTests.framework */; };
+		50E8BD84AD985BD9A7FBB270 /* Pods_20190211_NA_NYCSchoolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9713E76B3A094932B661C46F /* Pods_20190211_NA_NYCSchoolsUITests.framework */; };
 		A24402DF221E66AA00AF210A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24402DE221E66AA00AF210A /* AppDelegate.swift */; };
 		A24402E6221E66AC00AF210A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24402E5221E66AC00AF210A /* Assets.xcassets */; };
 		A24402E9221E66AC00AF210A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */; };
@@ -18,6 +20,8 @@
 		A2440313221E670400AF210A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A244030F221E670400AF210A /* Main.storyboard */; };
 		A2440318221E77A400AF210A /* NetworkErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */; };
 		A2440319221E77A400AF210A /* NetworkErrorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */; };
+		A269579E221F943A00B4774A /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269579D221F943A00B4774A /* ReachabilityManager.swift */; };
+		CE6DF0339B4AE3F49B02859C /* Pods_20190211_NA_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F5BAB79686C9480F23FB0A0 /* Pods-20190211-NA-NYCSchoolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchoolsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchoolsTests/Pods-20190211-NA-NYCSchoolsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		615BAB343B173E89AA28E35A /* Pods-20190211-NA-NYCSchoolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchoolsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchoolsUITests/Pods-20190211-NA-NYCSchoolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6867CC3271496C47D39A92F7 /* Pods-20190211-NA-NYCSchools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchools/Pods-20190211-NA-NYCSchools.debug.xcconfig"; sourceTree = "<group>"; };
+		7053C8CF4ABB921B14DACCE8 /* Pods-20190211-NA-NYCSchoolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchoolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchoolsTests/Pods-20190211-NA-NYCSchoolsTests.release.xcconfig"; sourceTree = "<group>"; };
+		93ABBDDD00EC126C3AB65A82 /* Pods-20190211-NA-NYCSchoolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchoolsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchoolsUITests/Pods-20190211-NA-NYCSchoolsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9713E76B3A094932B661C46F /* Pods_20190211_NA_NYCSchoolsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190211_NA_NYCSchoolsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB041D4C30E0FBD64F99394 /* Pods_20190211_NA_NYCSchoolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190211_NA_NYCSchoolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24402DB221E66AA00AF210A /* 20190211-NA-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20190211-NA-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24402DE221E66AA00AF210A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24402E5221E66AC00AF210A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +66,9 @@
 		A244030F221E670400AF210A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewCell.swift; sourceTree = "<group>"; };
 		A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkErrorViewCell.xib; sourceTree = "<group>"; };
+		A269579D221F943A00B4774A /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190211_NA_NYCSchools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E2D23C882F6C11578A22C3 /* Pods-20190211-NA-NYCSchools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchools.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchools/Pods-20190211-NA-NYCSchools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6DF0339B4AE3F49B02859C /* Pods_20190211_NA_NYCSchools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7DEE3599F40A9076116EFE /* Pods_20190211_NA_NYCSchoolsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E8BD84AD985BD9A7FBB270 /* Pods_20190211_NA_NYCSchoolsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +127,8 @@
 				A24402F2221E66AD00AF210A /* 20190211-NA-NYCSchoolsTests */,
 				A24402FD221E66AD00AF210A /* 20190211-NA-NYCSchoolsUITests */,
 				A24402DC221E66AA00AF210A /* Products */,
+				DA91A964A41EF0E15B1B72A4 /* Pods */,
+				D34506BBFF4F122294B1CE72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +148,7 @@
 				A2436395221E7D630061792F /* ViewController */,
 				A2436394221E7D3C0061792F /* View */,
 				A24402DE221E66AA00AF210A /* AppDelegate.swift */,
+				A269579F221FA59E00B4774A /* Network */,
 				A24402E5221E66AC00AF210A /* Assets.xcassets */,
 				A24402EA221E66AC00AF210A /* Info.plist */,
 			);
@@ -153,6 +173,37 @@
 			path = "20190211-NA-NYCSchoolsUITests";
 			sourceTree = "<group>";
 		};
+		A269579F221FA59E00B4774A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A269579D221F943A00B4774A /* ReachabilityManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D34506BBFF4F122294B1CE72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */,
+				9EB041D4C30E0FBD64F99394 /* Pods_20190211_NA_NYCSchoolsTests.framework */,
+				9713E76B3A094932B661C46F /* Pods_20190211_NA_NYCSchoolsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA91A964A41EF0E15B1B72A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6867CC3271496C47D39A92F7 /* Pods-20190211-NA-NYCSchools.debug.xcconfig */,
+				D5E2D23C882F6C11578A22C3 /* Pods-20190211-NA-NYCSchools.release.xcconfig */,
+				3F5BAB79686C9480F23FB0A0 /* Pods-20190211-NA-NYCSchoolsTests.debug.xcconfig */,
+				7053C8CF4ABB921B14DACCE8 /* Pods-20190211-NA-NYCSchoolsTests.release.xcconfig */,
+				615BAB343B173E89AA28E35A /* Pods-20190211-NA-NYCSchoolsUITests.debug.xcconfig */,
+				93ABBDDD00EC126C3AB65A82 /* Pods-20190211-NA-NYCSchoolsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2440303221E66AD00AF210A /* Build configuration list for PBXNativeTarget "20190211-NA-NYCSchools" */;
 			buildPhases = (
+				BE31C4406BA6AE32FB4750E3 /* [CP] Check Pods Manifest.lock */,
 				A24402D7221E66AA00AF210A /* Sources */,
 				A24402D8221E66AA00AF210A /* Frameworks */,
 				A24402D9221E66AA00AF210A /* Resources */,
+				537637B46AC3E2989D49E379 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2440306221E66AD00AF210A /* Build configuration list for PBXNativeTarget "20190211-NA-NYCSchoolsTests" */;
 			buildPhases = (
+				9E916F795AA36AF356E293B8 /* [CP] Check Pods Manifest.lock */,
 				A24402EB221E66AC00AF210A /* Sources */,
 				A24402EC221E66AC00AF210A /* Frameworks */,
 				A24402ED221E66AC00AF210A /* Resources */,
@@ -195,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2440309221E66AD00AF210A /* Build configuration list for PBXNativeTarget "20190211-NA-NYCSchoolsUITests" */;
 			buildPhases = (
+				1289761B0661754B3E3FF3C7 /* [CP] Check Pods Manifest.lock */,
 				A24402F6221E66AD00AF210A /* Sources */,
 				A24402F7221E66AD00AF210A /* Frameworks */,
 				A24402F8221E66AD00AF210A /* Resources */,
@@ -280,6 +335,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1289761B0661754B3E3FF3C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-20190211-NA-NYCSchoolsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		537637B46AC3E2989D49E379 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-20190211-NA-NYCSchools/Pods-20190211-NA-NYCSchools-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-20190211-NA-NYCSchools/Pods-20190211-NA-NYCSchools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E916F795AA36AF356E293B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-20190211-NA-NYCSchoolsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE31C4406BA6AE32FB4750E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-20190211-NA-NYCSchools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A24402D7221E66AA00AF210A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -289,6 +419,7 @@
 				A2440318221E77A400AF210A /* NetworkErrorViewCell.swift in Sources */,
 				A2440311221E670400AF210A /* SchoolViewCell.swift in Sources */,
 				A24402DF221E66AA00AF210A /* AppDelegate.swift in Sources */,
+				A269579E221F943A00B4774A /* ReachabilityManager.swift in Sources */,
 				A2440310221E670400AF210A /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +583,7 @@
 		};
 		A2440304221E66AD00AF210A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6867CC3271496C47D39A92F7 /* Pods-20190211-NA-NYCSchools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +602,7 @@
 		};
 		A2440305221E66AD00AF210A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E2D23C882F6C11578A22C3 /* Pods-20190211-NA-NYCSchools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +621,7 @@
 		};
 		A2440307221E66AD00AF210A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F5BAB79686C9480F23FB0A0 /* Pods-20190211-NA-NYCSchoolsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +642,7 @@
 		};
 		A2440308221E66AD00AF210A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7053C8CF4ABB921B14DACCE8 /* Pods-20190211-NA-NYCSchoolsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +663,7 @@
 		};
 		A244030A221E66AD00AF210A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615BAB343B173E89AA28E35A /* Pods-20190211-NA-NYCSchoolsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -547,6 +683,7 @@
 		};
 		A244030B221E66AD00AF210A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93ABBDDD00EC126C3AB65A82 /* Pods-20190211-NA-NYCSchoolsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
