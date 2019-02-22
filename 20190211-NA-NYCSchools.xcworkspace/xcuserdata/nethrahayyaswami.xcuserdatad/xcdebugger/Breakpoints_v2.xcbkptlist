@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.10217"
+            timestampString = "572529816.815248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "223"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.102296"
+            timestampString = "572529816.815663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.102396"
+            timestampString = "572529816.815874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "224"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.1024849"
+            timestampString = "572529816.816059"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "225"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.102549"
+            timestampString = "572529816.816239"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "222"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.102625"
+            timestampString = "572529816.81642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "135"
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.102679"
+            timestampString = "572529816.816608"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "168"
             endingLineNumber = "168"
-            landmarkName = "loadMoreItems()"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.102728"
+            timestampString = "572529816.816793"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.102778"
+            timestampString = "572529816.816982"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "20190211-NA-NYCSchools/ViewController/SchoolViewController.swift"
-            timestampString = "572502039.102828"
+            timestampString = "572529816.817168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
             endingLineNumber = "118"
-            landmarkName = "searchItems()"
+            landmarkName = "loadItemsNow(listType:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -174,9 +174,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "networkStatusDidChange(status:)"
-            landmarkType = "7">
+            endingLineNumber = "169">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -190,9 +188,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "172"
-            endingLineNumber = "172"
-            landmarkName = "networkStatusDidChange(status:)"
-            landmarkType = "7">
+            endingLineNumber = "172">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -206,41 +202,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "networkStatusDidChange(status:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_0190211_NA_NYCSchools.ScoreViewController.networkStatusDidChange(status: ReachabilitySwift.Reachability.NetworkStatus) -&gt; ()"
-                  moduleName = "20190211-NA-NYCSchools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nethrahayyaswami/ios%20app/Virtueus/20190211-NA-NYCSchools/20190211-NA-NYCSchools/ViewController/ScoreViewController.swift"
-                  timestampString = "572529407.748971"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "173"
-                  endingLineNumber = "173"
-                  offsetFromSymbolStart = "1101">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.UIAlertAction) -&gt; () in _0190211_NA_NYCSchools.ScoreViewController.networkStatusDidChange(status: ReachabilitySwift.Reachability.NetworkStatus) -&gt; ()"
-                  moduleName = "20190211-NA-NYCSchools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nethrahayyaswami/ios%20app/Virtueus/20190211-NA-NYCSchools/20190211-NA-NYCSchools/ViewController/ScoreViewController.swift"
-                  timestampString = "572529407.750577"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "174"
-                  endingLineNumber = "174"
-                  offsetFromSymbolStart = "18">
-               </Location>
-            </Locations>
+            endingLineNumber = "173">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
