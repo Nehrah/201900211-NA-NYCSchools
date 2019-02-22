@@ -20,7 +20,8 @@
 		A2440313221E670400AF210A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A244030F221E670400AF210A /* Main.storyboard */; };
 		A2440318221E77A400AF210A /* NetworkErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */; };
 		A2440319221E77A400AF210A /* NetworkErrorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */; };
-		A269579E221F943A00B4774A /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269579D221F943A00B4774A /* ReachabilityManager.swift */; };
+		A26957A3221FB2DD00B4774A /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957A2221FB2DD00B4774A /* ReachabilityManager.swift */; };
+		A26957A5221FB2E600B4774A /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957A4221FB2E600B4774A /* ReachabilityManager.swift */; };
 		CE6DF0339B4AE3F49B02859C /* Pods_20190211_NA_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +67,8 @@
 		A244030F221E670400AF210A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewCell.swift; sourceTree = "<group>"; };
 		A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkErrorViewCell.xib; sourceTree = "<group>"; };
-		A269579D221F943A00B4774A /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		A26957A2221FB2DD00B4774A /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		A26957A4221FB2E600B4774A /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190211_NA_NYCSchools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E2D23C882F6C11578A22C3 /* Pods-20190211-NA-NYCSchools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchools.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchools/Pods-20190211-NA-NYCSchools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 		A2436394221E7D3C0061792F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A26957A2221FB2DD00B4774A /* ReachabilityManager.swift */,
 				A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */,
 				A244030D221E670400AF210A /* SchoolViewCell.swift */,
 				A244030F221E670400AF210A /* Main.storyboard */,
@@ -148,7 +151,7 @@
 				A2436395221E7D630061792F /* ViewController */,
 				A2436394221E7D3C0061792F /* View */,
 				A24402DE221E66AA00AF210A /* AppDelegate.swift */,
-				A269579D221F943A00B4774A /* ReachabilityManager.swift */,
+				A26957A4221FB2E600B4774A /* ReachabilityManager.swift */,
 				A24402E5221E66AC00AF210A /* Assets.xcassets */,
 				A24402EA221E66AC00AF210A /* Info.plist */,
 			);
@@ -409,9 +412,10 @@
 			files = (
 				A2440312221E670400AF210A /* SchoolViewController.swift in Sources */,
 				A2440318221E77A400AF210A /* NetworkErrorViewCell.swift in Sources */,
+				A26957A5221FB2E600B4774A /* ReachabilityManager.swift in Sources */,
 				A2440311221E670400AF210A /* SchoolViewCell.swift in Sources */,
 				A24402DF221E66AA00AF210A /* AppDelegate.swift in Sources */,
-				A269579E221F943A00B4774A /* ReachabilityManager.swift in Sources */,
+				A26957A3221FB2DD00B4774A /* ReachabilityManager.swift in Sources */,
 				A2440310221E670400AF210A /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
