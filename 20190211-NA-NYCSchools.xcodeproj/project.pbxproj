@@ -19,7 +19,7 @@
 		A26957C62220789F00B4774A /* NetworkErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957C52220789F00B4774A /* NetworkErrorViewCell.swift */; };
 		A26957C8222078FE00B4774A /* SchoolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957C7222078FE00B4774A /* SchoolViewCell.swift */; };
 		A26957CA2220793400B4774A /* NetworkErrorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26957C92220793400B4774A /* NetworkErrorViewCell.xib */; };
-		A26957DB22207CF000B4774A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26957DA22207CF000B4774A /* LaunchScreen.storyboard */; };
+		A26957DF2220A8E100B4774A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26957DE2220A8E100B4774A /* LaunchScreen.storyboard */; };
 		CE6DF0339B4AE3F49B02859C /* Pods_20190211_NA_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		A26957C52220789F00B4774A /* NetworkErrorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewCell.swift; sourceTree = "<group>"; };
 		A26957C7222078FE00B4774A /* SchoolViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewCell.swift; sourceTree = "<group>"; };
 		A26957C92220793400B4774A /* NetworkErrorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorViewCell.xib; sourceTree = "<group>"; };
-		A26957DA22207CF000B4774A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A26957DE2220A8E100B4774A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190211_NA_NYCSchools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E2D23C882F6C11578A22C3 /* Pods-20190211-NA-NYCSchools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchools.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchools/Pods-20190211-NA-NYCSchools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A26957C7222078FE00B4774A /* SchoolViewCell.swift */,
-				A26957DA22207CF000B4774A /* LaunchScreen.storyboard */,
+				A26957DE2220A8E100B4774A /* LaunchScreen.storyboard */,
 				A26957BB2220782400B4774A /* Main.storyboard */,
 				A26957C92220793400B4774A /* NetworkErrorViewCell.xib */,
 				A26957C52220789F00B4774A /* NetworkErrorViewCell.swift */,
@@ -302,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26957BC2220782500B4774A /* Main.storyboard in Resources */,
-				A26957DB22207CF000B4774A /* LaunchScreen.storyboard in Resources */,
+				A26957DF2220A8E100B4774A /* LaunchScreen.storyboard in Resources */,
 				A24402E6221E66AC00AF210A /* Assets.xcassets in Resources */,
 				A26957CA2220793400B4774A /* NetworkErrorViewCell.xib in Resources */,
 			);
