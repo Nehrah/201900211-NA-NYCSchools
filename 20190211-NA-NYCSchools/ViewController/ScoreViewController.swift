@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ReachabilitySwift
+
 struct Score {
     var reading: String
     var math: String
@@ -32,6 +34,7 @@ class ScoreViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     var school_info = ["Name","Grades","Website"]
     var school_detail : [String] = []
     var score_detail: [String] = ["","","","",""]
+    var networkError = false
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,6 +89,7 @@ class ScoreViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     //Function that loads the Score details
     func loadScore(info: [String]){
+        if networkError == false{
         myActivityIndicator.startAnimating()
         let listUrlString = "https://data.cityofnewyork.us/resource/734v-jeq5.json?dbn=" + String(databaseNumber)
         let myUrl = NSURL(string: listUrlString);
@@ -95,12 +99,7 @@ class ScoreViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             data, response, error in
             if error != nil {
                 print(error!.localizedDescription)
-                ScoreViewController.performTaskInMainQueue {//Network Error handling
-                            self.navigationController?.popViewController(animated: true)
-                            self.dismiss(animated: true, completion: nil)
-                            self.myActivityIndicator.stopAnimating()
-                            return
-                }
+                self.networkErrorHandle()
             }
             else{
             do {
@@ -127,7 +126,9 @@ class ScoreViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             }
         }
         task.resume()
+            
         self.myActivityIndicator.stopAnimating()
+        }
     }
     
     //Async code handling
@@ -145,4 +146,40 @@ class ScoreViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             }
         }
     }
+    func networkErrorHandle()
+    {
+        let alert = UIAlertController(title: "Network Alert", message: "You were offline", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { action in
+          
+            ScoreViewController.performTaskInMainQueue {
+                self.navigationController?.popViewController(animated: true)
+                self.dismiss(animated: true, completion: nil)
+                self.myActivityIndicator.stopAnimating()
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
 }
+extension ScoreViewController: NetworkStatusListener {
+    
+    func networkStatusDidChange(status: Reachability.NetworkStatus) {
+        
+        switch status {
+        case .notReachable:
+            debugPrint("ViewController: Network became unreachable")
+        case .reachableViaWiFi:
+            debugPrint("ViewController: Network reachable through WiFi")
+        case .reachableViaWWAN:
+            debugPrint("ViewController: Network reachable through Cellular Data")
+        }
+        self.networkError = (status == .notReachable)
+        if networkError == false{
+            loadScore(info: school_detail)
+        }
+        else{
+            self.networkErrorHandle()
+        }
+    }
+}
+

@@ -5,6 +5,7 @@
 //  Copyright © 2019 Nethrah Ayyaswami . All rights reserved.
 //
 import UIKit
+import ReachabilitySwift
 struct school_info {
     var dbn: String
     var school_name: String
@@ -43,109 +44,127 @@ class SchoolViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        loadMoreItems()
+        ReachabilityManager.shared.addListener(listener: self)
         if let index = self.tableView.indexPathForSelectedRow{
             self.tableView.deselectRow(at: index, animated: true)
         }
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        ReachabilityManager.shared.removeListener(listener: self)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
- //Function that returns the search results by calling the Search Url and append the results in an array
+    //Function that returns the search results by calling the Search Url and append the results in an array
     func searchItems(){
-        let listSearchString = "https://data.cityofnewyork.us/resource/97mf-9njv.json?$where=school_name%20like%27%25"+String(searchString)+"%25%27&$order=school_name%20ASC"
-        var myUrl : NSURL
-        myUrl = NSURL(string: listSearchString)!
-        let request = NSMutableURLRequest(url:myUrl as URL);
-        request.httpMethod = "GET";
-        let task = URLSession.shared.dataTask(with: request as URLRequest) {
-            data, response, error in
-            if error != nil {
-                print(error!.localizedDescription)
-                self.networkErrorHandle()
-                return
-                
-            }
-            else{
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data!) as? NSArray
-                    guard let jsonArray = json as? [[String: Any]] else {
-                        return
-                    }
-                    if jsonArray .isEmpty{
-                        let alert = UIAlertController(title: "Search Alert", message: "Please type a valid school", preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { action in
-                            self.searchBar.text?.removeAll()
-                            self.searchActive = false
-                            SchoolViewController.performTaskInMainQueue {
-                                self.tableView.reloadData()
-                                self.activityIndicator.stopAnimating()
-                            }
-                        }))
-                        self.present(alert, animated: true, completion: nil)
-                        return
-                    }else{
-                        for dic in jsonArray{
-                            self.filteredList.append(school_info(dic))
-                            SchoolViewController.performTaskInMainQueue {
-                                self.tableView.reloadData()
-                                self.activityIndicator.stopAnimating()
-                            }
-                        }
-                    }
+        if networkError == false{
+            let listSearchString = "https://data.cityofnewyork.us/resource/97mf-9njv.json?$where=school_name%20like%27%25"+String(searchString)+"%25%27&$order=school_name%20ASC"
+            var myUrl : NSURL
+            myUrl = NSURL(string: listSearchString)!
+            let request = NSMutableURLRequest(url:myUrl as URL);
+            request.httpMethod = "GET";
+            let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                data, response, error in
+                if error != nil {
+                    print(error!.localizedDescription)
+                    self.networkErrorHandle()
+                    return
                     
                 }
-                catch {
-                    print(error)
+                else{
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data!) as? NSArray
+                        guard let jsonArray = json as? [[String: Any]] else {
+                            return
+                        }
+                        if jsonArray .isEmpty{
+                            let alert = UIAlertController(title: "Search Alert", message: "Please type a valid school", preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { action in
+                                self.searchBar.text?.removeAll()
+                                self.searchActive = false
+                                SchoolViewController.performTaskInMainQueue {
+                                    self.tableView.reloadData()
+                                    self.activityIndicator.stopAnimating()
+                                }
+                            }))
+                            self.present(alert, animated: true, completion: nil)
+                            return
+                        }else{
+                            for dic in jsonArray{
+                                self.filteredList.append(school_info(dic))
+                                SchoolViewController.performTaskInMainQueue {
+                                    self.tableView.reloadData()
+                                    self.activityIndicator.stopAnimating()
+                                }
+                            }
+                        }
+                        
+                    }
+                    catch {
+                        print(error)
+                    }
                 }
             }
+            task.resume()
         }
-        task.resume()
+        else{
+            SchoolViewController.performTaskInMainQueue {
+                self.tableView.reloadData()
+                self.activityIndicator.stopAnimating()
+            }
+        }
     }
     
     //Function that returns the school data and append the results in an array.
     // Url returns the data with a limit of 20. Start index is kept track to load the next set of high school items.
     
     func loadItemsNow(listType:String){
-        let listUrlString = "https://data.cityofnewyork.us/resource/97mf-9njv.json?$limit=" + String(fromIndex + batchSize) + "&$offset=" + String(fromIndex)
-        var myUrl : NSURL
-        myUrl = NSURL(string: listUrlString)!
-        let request = NSMutableURLRequest(url:myUrl as URL);
-        request.httpMethod = "GET";
-        let task = URLSession.shared.dataTask(with: request as URLRequest) {
-            data, response, error in
-            if error != nil {
-                print(error!.localizedDescription)
-                self.networkErrorHandle()
-                
-            }
-            else{
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data!) as? NSArray
-                    guard let jsonArray = json as? [[String: Any]] else {
-                        return
+        if networkError == false{
+            let listUrlString = "https://data.cityofnewyork.us/resource/97mf-9njv.json?$limit=" + String(fromIndex + batchSize) + "&$offset=" + String(fromIndex)
+            var myUrl : NSURL
+            myUrl = NSURL(string: listUrlString)!
+            let request = NSMutableURLRequest(url:myUrl as URL);
+            request.httpMethod = "GET";
+            let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                data, response, error in
+                if error != nil {
+                    print(error!.localizedDescription)
+                    if let error = error as NSError?, error.domain == NSURLErrorDomain && error.code == NSURLErrorNotConnectedToInternet {
+                        self.networkErrorHandle()
                     }
-                    var items = self.privateList
-                    for dic in jsonArray{
-                        items.append(school_info(dic))
-                        if self.fromIndex < items.count {
-                            self.privateList = items
-                            self.fromIndex = items.count
-                            SchoolViewController.performTaskInMainQueue {
-                                self.tableView.reloadData()
-                                self.activityIndicator.stopAnimating()
+                }
+                else{
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data!) as? NSArray
+                        guard let jsonArray = json as? [[String: Any]] else {
+                            return
+                        }
+                        var items = self.privateList
+                        for dic in jsonArray{
+                            items.append(school_info(dic))
+                            if self.fromIndex < items.count {
+                                self.privateList = items
+                                self.fromIndex = items.count
+                                SchoolViewController.performTaskInMainQueue {
+                                    self.tableView.reloadData()
+                                    self.activityIndicator.stopAnimating()
+                                }
                             }
                         }
                     }
-                }
-                    
-                catch {
-                    print(error)
+                        
+                    catch {
+                        print(error)
+                    }
                 }
             }
+            task.resume()
         }
-        task.resume()
+        else{
+            SchoolViewController.performTaskInMainQueue {
+                self.activityIndicator.stopAnimating()
+            }
+        }
         
     }
     func loadMoreItems() {
@@ -171,11 +190,17 @@ class SchoolViewController: UIViewController {
     }
     func networkErrorHandle()
     {
-        SchoolViewController.performTaskInMainQueue {
-            self.networkError = true
-            self.tableView.reloadData()
-            self.activityIndicator.stopAnimating()
-        }
+        let alert = UIAlertController(title: "Network Alert", message: "You were offline", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { action in
+            self.searchBar.text?.removeAll()
+            self.searchActive = false
+            SchoolViewController.performTaskInMainQueue {
+                self.tableView.reloadData()
+                self.activityIndicator.stopAnimating()
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
     }
     //Async task Error handling
     class func performTaskInMainQueue(task: @escaping ()->()) {
@@ -267,3 +292,25 @@ extension SchoolViewController: UITableViewDataSource,UITableViewDelegate,UISear
         activityIndicator.startAnimating()
     }
 }
+extension SchoolViewController: NetworkStatusListener {
+    
+    func networkStatusDidChange(status: Reachability.NetworkStatus) {
+        
+        switch status {
+        case .notReachable:
+            debugPrint("ViewController: Network became unreachable")
+        case .reachableViaWiFi:
+            debugPrint("ViewController: Network reachable through WiFi")
+        case .reachableViaWWAN:
+            debugPrint("ViewController: Network reachable through Cellular Data")
+        }
+        self.networkError = (status == .notReachable)
+        if networkError == false{
+            loadMoreItems()
+        }
+        else{
+            self.networkErrorHandle()
+        }
+    }
+}
+
