@@ -107,6 +107,7 @@
 				A244030F221E670400AF210A /* Main.storyboard */,
 				A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */,
 				A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */,
+				A26957A822202B7400B4774A /* ReachabilityManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,7 +177,6 @@
 		A26957AA2220731700B4774A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				A26957A822202B7400B4774A /* ReachabilityManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
