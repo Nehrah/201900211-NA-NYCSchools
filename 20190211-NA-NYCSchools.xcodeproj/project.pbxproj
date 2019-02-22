@@ -148,7 +148,7 @@
 				A2436395221E7D630061792F /* ViewController */,
 				A2436394221E7D3C0061792F /* View */,
 				A24402DE221E66AA00AF210A /* AppDelegate.swift */,
-				A269579F221FA59E00B4774A /* Network */,
+				A269579D221F943A00B4774A /* ReachabilityManager.swift */,
 				A24402E5221E66AC00AF210A /* Assets.xcassets */,
 				A24402EA221E66AC00AF210A /* Info.plist */,
 			);
@@ -171,14 +171,6 @@
 				A2440300221E66AD00AF210A /* Info.plist */,
 			);
 			path = "20190211-NA-NYCSchoolsUITests";
-			sourceTree = "<group>";
-		};
-		A269579F221FA59E00B4774A /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				A269579D221F943A00B4774A /* ReachabilityManager.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		D34506BBFF4F122294B1CE72 /* Frameworks */ = {
