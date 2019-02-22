@@ -11,22 +11,16 @@
 		50E8BD84AD985BD9A7FBB270 /* Pods_20190211_NA_NYCSchoolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9713E76B3A094932B661C46F /* Pods_20190211_NA_NYCSchoolsUITests.framework */; };
 		A24402DF221E66AA00AF210A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24402DE221E66AA00AF210A /* AppDelegate.swift */; };
 		A24402E6221E66AC00AF210A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24402E5221E66AC00AF210A /* Assets.xcassets */; };
-		A24402E9221E66AC00AF210A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */; };
 		A24402F4221E66AD00AF210A /* _0190211_NA_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24402F3221E66AD00AF210A /* _0190211_NA_NYCSchoolsTests.swift */; };
 		A24402FF221E66AD00AF210A /* _0190211_NA_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24402FE221E66AD00AF210A /* _0190211_NA_NYCSchoolsUITests.swift */; };
 		A2440310221E670400AF210A /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A244030C221E670400AF210A /* ScoreViewController.swift */; };
-		A2440311221E670400AF210A /* SchoolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A244030D221E670400AF210A /* SchoolViewCell.swift */; };
 		A2440312221E670400AF210A /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A244030E221E670400AF210A /* SchoolViewController.swift */; };
-		A2440313221E670400AF210A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A244030F221E670400AF210A /* Main.storyboard */; };
-		A2440318221E77A400AF210A /* NetworkErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */; };
-		A2440319221E77A400AF210A /* NetworkErrorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */; };
-		A26957A922202B7400B4774A /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957A822202B7400B4774A /* ReachabilityManager.swift */; };
-		A26957B3222076E200B4774A /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957AC222076E200B4774A /* ReachabilityManager.swift */; };
-		A26957B4222076E200B4774A /* NetworkErrorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26957AD222076E200B4774A /* NetworkErrorViewCell.xib */; };
-		A26957B5222076E200B4774A /* NetworkErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957AE222076E200B4774A /* NetworkErrorViewCell.swift */; };
-		A26957B6222076E200B4774A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26957AF222076E200B4774A /* LaunchScreen.storyboard */; };
-		A26957B7222076E200B4774A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26957B1222076E200B4774A /* Main.storyboard */; };
-		A26957B8222076E200B4774A /* SchoolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957B2222076E200B4774A /* SchoolViewCell.swift */; };
+		A26957BC2220782500B4774A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26957BB2220782400B4774A /* Main.storyboard */; };
+		A26957BE2220782B00B4774A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26957BD2220782B00B4774A /* LaunchScreen.storyboard */; };
+		A26957C02220783300B4774A /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957BF2220783300B4774A /* ReachabilityManager.swift */; };
+		A26957C62220789F00B4774A /* NetworkErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957C52220789F00B4774A /* NetworkErrorViewCell.swift */; };
+		A26957C8222078FE00B4774A /* SchoolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26957C7222078FE00B4774A /* SchoolViewCell.swift */; };
+		A26957CA2220793400B4774A /* NetworkErrorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26957C92220793400B4774A /* NetworkErrorViewCell.xib */; };
 		CE6DF0339B4AE3F49B02859C /* Pods_20190211_NA_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +52,6 @@
 		A24402DB221E66AA00AF210A /* 20190211-NA-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20190211-NA-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24402DE221E66AA00AF210A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24402E5221E66AC00AF210A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A24402E8221E66AC00AF210A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A24402EA221E66AC00AF210A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24402EF221E66AC00AF210A /* 20190211-NA-NYCSchoolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20190211-NA-NYCSchoolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24402F3221E66AD00AF210A /* _0190211_NA_NYCSchoolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190211_NA_NYCSchoolsTests.swift; sourceTree = "<group>"; };
@@ -67,18 +60,13 @@
 		A24402FE221E66AD00AF210A /* _0190211_NA_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190211_NA_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		A2440300221E66AD00AF210A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A244030C221E670400AF210A /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
-		A244030D221E670400AF210A /* SchoolViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewCell.swift; sourceTree = "<group>"; };
 		A244030E221E670400AF210A /* SchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
-		A244030F221E670400AF210A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewCell.swift; sourceTree = "<group>"; };
-		A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkErrorViewCell.xib; sourceTree = "<group>"; };
-		A26957A822202B7400B4774A /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
-		A26957AC222076E200B4774A /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
-		A26957AD222076E200B4774A /* NetworkErrorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorViewCell.xib; sourceTree = "<group>"; };
-		A26957AE222076E200B4774A /* NetworkErrorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewCell.swift; sourceTree = "<group>"; };
-		A26957B0222076E200B4774A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A26957B1222076E200B4774A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A26957B2222076E200B4774A /* SchoolViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewCell.swift; sourceTree = "<group>"; };
+		A26957BB2220782400B4774A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A26957BD2220782B00B4774A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A26957BF2220783300B4774A /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		A26957C52220789F00B4774A /* NetworkErrorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewCell.swift; sourceTree = "<group>"; };
+		A26957C7222078FE00B4774A /* SchoolViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolViewCell.swift; sourceTree = "<group>"; };
+		A26957C92220793400B4774A /* NetworkErrorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorViewCell.xib; sourceTree = "<group>"; };
 		C66BE9AEA263B55FAE204AB7 /* Pods_20190211_NA_NYCSchools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190211_NA_NYCSchools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E2D23C882F6C11578A22C3 /* Pods-20190211-NA-NYCSchools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190211-NA-NYCSchools.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190211-NA-NYCSchools/Pods-20190211-NA-NYCSchools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,13 +102,11 @@
 		A2436394221E7D3C0061792F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */,
-				A244030D221E670400AF210A /* SchoolViewCell.swift */,
-				A244030F221E670400AF210A /* Main.storyboard */,
-				A2440317221E77A400AF210A /* NetworkErrorViewCell.xib */,
-				A2440316221E77A300AF210A /* NetworkErrorViewCell.swift */,
-				A26957A822202B7400B4774A /* ReachabilityManager.swift */,
-				A26957AB222076E200B4774A /* View */,
+				A26957C7222078FE00B4774A /* SchoolViewCell.swift */,
+				A26957BD2220782B00B4774A /* LaunchScreen.storyboard */,
+				A26957BB2220782400B4774A /* Main.storyboard */,
+				A26957C92220793400B4774A /* NetworkErrorViewCell.xib */,
+				A26957C52220789F00B4774A /* NetworkErrorViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +145,7 @@
 		A24402DD221E66AA00AF210A /* 20190211-NA-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				A26957BF2220783300B4774A /* ReachabilityManager.swift */,
 				A26957AA2220731700B4774A /* Network */,
 				A2436395221E7D630061792F /* ViewController */,
 				A2436394221E7D3C0061792F /* View */,
@@ -192,19 +179,6 @@
 			children = (
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		A26957AB222076E200B4774A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A26957AC222076E200B4774A /* ReachabilityManager.swift */,
-				A26957AD222076E200B4774A /* NetworkErrorViewCell.xib */,
-				A26957AE222076E200B4774A /* NetworkErrorViewCell.swift */,
-				A26957AF222076E200B4774A /* LaunchScreen.storyboard */,
-				A26957B1222076E200B4774A /* Main.storyboard */,
-				A26957B2222076E200B4774A /* SchoolViewCell.swift */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		D34506BBFF4F122294B1CE72 /* Frameworks */ = {
@@ -338,13 +312,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26957B7222076E200B4774A /* Main.storyboard in Resources */,
-				A2440319221E77A400AF210A /* NetworkErrorViewCell.xib in Resources */,
-				A2440313221E670400AF210A /* Main.storyboard in Resources */,
-				A24402E9221E66AC00AF210A /* LaunchScreen.storyboard in Resources */,
-				A26957B6222076E200B4774A /* LaunchScreen.storyboard in Resources */,
+				A26957BE2220782B00B4774A /* LaunchScreen.storyboard in Resources */,
+				A26957BC2220782500B4774A /* Main.storyboard in Resources */,
 				A24402E6221E66AC00AF210A /* Assets.xcassets in Resources */,
-				A26957B4222076E200B4774A /* NetworkErrorViewCell.xib in Resources */,
+				A26957CA2220793400B4774A /* NetworkErrorViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,14 +416,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2440312221E670400AF210A /* SchoolViewController.swift in Sources */,
-				A2440318221E77A400AF210A /* NetworkErrorViewCell.swift in Sources */,
-				A26957B3222076E200B4774A /* ReachabilityManager.swift in Sources */,
-				A26957B8222076E200B4774A /* SchoolViewCell.swift in Sources */,
-				A2440311221E670400AF210A /* SchoolViewCell.swift in Sources */,
-				A26957B5222076E200B4774A /* NetworkErrorViewCell.swift in Sources */,
+				A26957C62220789F00B4774A /* NetworkErrorViewCell.swift in Sources */,
 				A24402DF221E66AA00AF210A /* AppDelegate.swift in Sources */,
-				A26957A922202B7400B4774A /* ReachabilityManager.swift in Sources */,
+				A26957C02220783300B4774A /* ReachabilityManager.swift in Sources */,
 				A2440310221E670400AF210A /* ScoreViewController.swift in Sources */,
+				A26957C8222078FE00B4774A /* SchoolViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,25 +454,6 @@
 			targetProxy = A24402FB221E66AD00AF210A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A24402E7221E66AC00AF210A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A24402E8221E66AC00AF210A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		A26957AF222076E200B4774A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A26957B0222076E200B4774A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A2440301221E66AD00AF210A /* Debug */ = {
