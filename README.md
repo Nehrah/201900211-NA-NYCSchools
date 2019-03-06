@@ -3,7 +3,7 @@ Coding Challenge: NYC Schools
 
 ## **Requirements**:
 
-Create a browser based or native app to provide information on NYC High schools. - **I have built a Native App to fulfill the requirements.**
+Create a browser based or native app to provide information on NYC High schools. - 
 
 1. Display a list of NYC High Schools. - **Completed**
 	* Get your data here: https://data.cityofnewyork.us/Education/DOE-High-School-Directory-2017/s3k6-pzi2 
@@ -13,7 +13,6 @@ Create a browser based or native app to provide information on NYC High schools.
 
 ## Libraries Used
 I have implemented the app using iOS SDK native libraries without using any other open source libraries through cocoa pods to make sure the solution is minimalistic for the purpose of proving my technical cognizance for the data request.
-*Just to let you know I am capable of integrating custom libraries in the real-world applications using Alamofire or libraries:)*
 
 
 ## UX Implementations
@@ -30,4 +29,4 @@ I have implemented the app using iOS SDK native libraries without using any othe
   Started API End Point testing
   Integrated Reachability open source library for network monitoring have to work on that
 
-## Thank you for the opportunity, I hope I will be the right fit for the open position. Looking forward to meet the team in person! ***- Nethrah Ayyaswami***
+
